@@ -7,3 +7,8 @@ def home(request):
         'name' : 'Stemberg Carvalho'
     })
 
+def berg(request):
+    return render(request, 'recipes/astro/index.html')
+
+def loja(request):
+    return render(request, 'recipes/loja/index.html')
