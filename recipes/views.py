@@ -12,3 +12,8 @@ def berg(request):
 
 def loja(request):
     return render(request, 'recipes/loja/index.html')
+
+def recipe(request, id):
+    return render(request,'recipes/pages/home.html', context={
+        'name' : 'Stemberg Carvalho'
+    })
